@@ -5,7 +5,6 @@ public class CreditCard extends BankCard {
     protected Double creditLimit;
 
     public CreditCard(Double creditLine) {
-        super();
         this.creditLine = creditLine;
         this.creditLimit = creditLine;
     }

@@ -6,7 +6,6 @@ public class DebitCardCashBack extends DebitCard {
     private Double cashBackBalance;
 
     public DebitCardCashBack(Double cashBackRate) {
-        super();
         this.cashBackRate = cashBackRate;
         this.cashBackBalance = 0D;
     }
