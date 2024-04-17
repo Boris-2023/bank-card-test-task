@@ -16,10 +16,11 @@ public class CardRepository {
     }
 
     private void setInitialStock() {
-        cards.add(new DebitCard());
-        cards.add(new DebitCardCashBack(.02));
-        cards.add(new CreditCard(15000D));
-        cards.add(new CreditCardBonus(20000D, 5000D));
+
+        addCard(new DebitCard());
+        addCard(new DebitCardCashBack(.02));
+        addCard(new CreditCard(15000D));
+        addCard(new CreditCardBonus(20000D, 5000D));
 
         cards.forEach(x -> x.setBalance((double) ((ThreadLocalRandom.current().nextInt(5000, 10000)) / 1000) * 1000));
 
