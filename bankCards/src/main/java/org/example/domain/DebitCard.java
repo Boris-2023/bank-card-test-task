@@ -2,7 +2,7 @@ package org.example.domain;
 
 public class DebitCard extends BankCard {
 
-     @Override
+    @Override
     public void deposit(double amount) {
         balance += amount;
     }

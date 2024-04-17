@@ -27,7 +27,7 @@ public class CreditCard extends BankCard {
 
             newDebitBalance += newCreditBalance;
             newCreditBalance = 0;
-            balance= newDebitBalance;
+            balance = newDebitBalance;
         }
 
         this.creditLine = creditLine;
